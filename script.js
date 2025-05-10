@@ -16,7 +16,7 @@ tl.from("#line1-part1",{
             if(count<100) 
                 h5timer.innerHTML = count++;
             else h5timer.innerHTML = count;
-        },25)
+        },20)
     }
 })
 // add scperate beacuse of animation was satrting before other
@@ -32,7 +32,7 @@ tl.to("#loader",{
 })
 
 tl.from("#page1",{
-    delay:0,
+    delay:0.1,
     y:1600,
     duration:0.8,
     ease:Power4
@@ -47,7 +47,7 @@ tl.to("#loader",{
     display:"none"
 })
 
-tl.from(".page1-txt h1,#hero h2,#hero h3",{
+tl.from(".page1-txt h1,.page1-txt h2",{
     y:150,
     stagger:0.2,
     duration:0.5,
