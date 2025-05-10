@@ -11,6 +11,18 @@ html,body{
     height: 100%;
     width: 100%;
 }
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    /* background-color: #fff; */
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    /* now it is following arrow top left cornor  so using this will be at center*/
+    transform: translate(-50%,-50%);
+}
 
 #loader{
     position: fixed;
@@ -113,5 +125,62 @@ main{
 #page1{
     background-color: #151515;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    /* scroll bar is coming because of vw in width */
 }
+
+#page1 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 2.3vw 5.5vw;
+}
+
+nav #nav-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#nav-part h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.page1-txt{
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 27%;
+    /* reason for setting width and margin is we want this div at center of page */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+/* css has a bug that is nth child it considering nav as first child   */
+.page1-txt:nth-child(2){
+    margin-top: 15.5vh;
+}
+
+.page1-txt h2,h3{
+     font-size: 7.2vw;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+
+.page1-txt h1{
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+
+.page1-txt h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 500;
+}
+
+/* .page1-txt h2{
+    text-decoration: underline;
+} */
