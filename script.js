@@ -56,7 +56,7 @@ tl.from("#line1-part1",{
             if(count<100) 
                 h5timer.innerHTML = count++;
             else h5timer.innerHTML = count;
-        },20)
+        },27)
     }
 })
 // add scperate beacuse of animation was satrting before other
